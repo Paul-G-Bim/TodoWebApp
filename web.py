@@ -8,6 +8,9 @@ def add_todo():
     todos.append(todo_local)
     rw.write_todos(todos)
 
+    # Clear the input field
+    st.session_state["new_todo"] = ""
+
 
 st.title("My Todo App")
 st.subheader("This is my todo app.")
